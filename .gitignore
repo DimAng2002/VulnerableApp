@@ -30,3 +30,6 @@ build/
 
 /_site
 /docs/_site
+
+#key
+src/main/resources/static/templates/JWTVulnerability/keys/private_key.pem
