@@ -34,7 +34,8 @@ import org.springframework.stereotype.Service;
 /** @author KSASAN preetkaran20@gmail.com */
 @Service
 public class EndPointsInformationProvider implements IEndPointsInformationProvider {
-
+    private String PATH_VULNERABLE_APP_TEMPLATES =
+            "/VulnerableApp/templates/";
     private EnvUtils envUtils;
 
     private MessageBundle messageBundle;
@@ -148,7 +149,7 @@ public class EndPointsInformationProvider implements IEndPointsInformationProvid
                 Arrays.asList(
                         new ResourceURI(
                                 false,
-                                "/VulnerableApp/templates/"
+                                PATH_VULNERABLE_APP_TEMPLATES
                                         + facadeVulnerabilityDefinition.getName()
                                         + "/"
                                         + template
@@ -156,7 +157,7 @@ public class EndPointsInformationProvider implements IEndPointsInformationProvid
                                 ResourceType.CSS.name()),
                         new ResourceURI(
                                 false,
-                                "/VulnerableApp/templates/"
+                                PATH_VULNERABLE_APP_TEMPLATES
                                         + facadeVulnerabilityDefinition.getName()
                                         + "/"
                                         + template
@@ -165,7 +166,7 @@ public class EndPointsInformationProvider implements IEndPointsInformationProvid
         resourceInformation.setHtmlResource(
                 new ResourceURI(
                         false,
-                        "/VulnerableApp/templates/"
+                        PATH_VULNERABLE_APP_TEMPLATES
                                 + facadeVulnerabilityDefinition.getName()
                                 + "/"
                                 + template
